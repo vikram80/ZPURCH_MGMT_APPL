@@ -6,6 +6,7 @@ sap.ui.define(["sap/ui/core/mvc/Controller",
 	"use strict";
 	return Controller.extend("zpurch_mgmt_app.ZPURCH_MGMT_APP.controller.Search", {
 		onInit: function () {
+			//commmit 1 feature branch
 			var oThis = this;
 			var oComponent = oThis.getOwnerComponent();
 			oThis._oResourceBundle = oComponent.getModel("i18n").getResourceBundle();
