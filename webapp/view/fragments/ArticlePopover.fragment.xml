@@ -1,0 +1,41 @@
+<core:FragmentDefinition xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core" xmlns="sap.m">
+	<Dialog>
+		<!--<VBox class="sapUiSmallMargin">-->
+			<HBox class="partclass">
+				<ObjectIdentifier title="Article Num" text="123" titleActive="false" titlePress="titleClicked"/>
+				<ObjectIdentifier title="Desc" text="Abcde" titleActive="false"
+					titlePress="titleClicked"/>
+			</HBox>
+			<Panel expandable="true" expanded="true" width="auto">
+				<headerToolbar>
+					<Toolbar height="3rem">
+						<Title text="Grouping"/>
+					</Toolbar>
+				</headerToolbar>
+				<content>
+					<VBox>
+						
+						<Text text="Article Type"/>
+						
+					</VBox>
+				</content>
+			</Panel>
+			<Panel expandable="true" expanded="true" width="auto">
+				<headerToolbar>
+					<Toolbar height="3rem">
+						<Title text="Validity"/>
+					</Toolbar>
+				</headerToolbar>
+				<content>
+					<Text text="Valid From - Valid To Date" />
+				</content>
+			</Panel>
+			
+		<!--</VBox>-->
+		<beginButton>
+			<Button text="Close" press="handleOkDialogMaterialDetailList" type="Reject"/>
+		</beginButton>
+	</Dialog>
+
+
+	</core:FragmentDefinition>

@@ -1,0 +1,51 @@
+<core:FragmentDefinition xmlns="sap.m" xmlns:l="sap.ui.layout" xmlns:f="sap.ui.layout.form" xmlns:core="sap.ui.core">
+	<!--<VBox class="21">-->
+	<Table id="idTabPoList" noDataText="No PO Line items found" updateFinished="onUpdateFinished" mode="SingleSelectLeft">
+		<headerToolbar>
+			<Toolbar ariaLabelledBy="__xmlview0--label0" width="100%" id="toolbarPODet">
+				<Title id="idTabTitle" text="{i18n>poList}"/>
+				<ToolbarSpacer id="spacer0"/>
+				<SearchField xmlns="sap.m" liveChange="onSearch" placeholder="Search for Material No." id="idSearchMatno"/>
+			</Toolbar>
+		</headerToolbar>
+		<columns>
+			<Column id="colPoItem">
+				<header>
+					<Label text="Item No."/>
+				</header>
+			</Column>
+			<Column id="colPoMatno">
+				<header>
+					<Label text="Article No."/>
+				</header>
+			</Column>
+			<Column id="colPoQty">
+				<header>
+					<Label text="Quantity"/>
+				</header>
+			</Column>
+			<Column id="colPoPlant">
+				<header>
+					<Label text="Store"/>
+				</header>
+			</Column>
+			<Column id="colPoDelvDt">
+				<header>
+					<Label text="Delivery Date"/>
+				</header>
+			</Column>
+		</columns>
+		<items>
+			<ColumnListItem type="Active" id="item0">
+				<cells>
+					<Text text="Item No"/>
+					<ObjectIdentifier title="Matno" text="Mat Desc"/>
+					<Input id="idInpQty" text=""/>
+					<Text text="Store"/>
+					<DatePicker xmlns="sap.m" id="picker0" valueFormat="yyyy-MM-dd" displayFormat="MM/dd/yyyy"/>
+				</cells>
+			</ColumnListItem>
+		</items>
+	</Table>
+	<!--</VBox>-->
+</core:FragmentDefinition>
